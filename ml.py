@@ -173,7 +173,7 @@ def gso(m):
         print(orthonv)
     return np.array(orthov),np.array(orthonv)
 
-# Linear Regression
+# Linear Regression, input features X as matrix 'm', and results as vector 'y'
 
 def linreg(m, v):
     reg = linear_model.LinearRegression()
