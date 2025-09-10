@@ -182,6 +182,15 @@ def linreg(m, v):
     print("Intercept:", reg.intercept_)
     return reg.coef_, reg.intercept_
 
+# Ridge Regression 
+
+def ridreg(m, v):
+    reg = linear_model.Ridge(alpha = 0.5)
+    reg.fit(m, v)
+    print("Coefficients:", reg.coef_)
+    print("Intercept:", reg.intercept_)
+    return reg.coef_, reg.intercept_
+
 
 
 
