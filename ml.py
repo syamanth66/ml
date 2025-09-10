@@ -175,9 +175,12 @@ def gso(m):
 
 # Linear Regression
 
-def linreg(m,v):
+def linreg(m, v):
     reg = linear_model.LinearRegression()
-    reg.fit()
+    reg.fit(m, v)
+    print("Coefficients:", reg.coef_)
+    print("Intercept:", reg.intercept_)
+    return reg.coef_, reg.intercept_
 
 
 
