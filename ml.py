@@ -191,7 +191,19 @@ def ridreg(m, v):
     print("Intercept:", reg.intercept_)
     return reg.coef_, reg.intercept_
 
+class matrix:
+    def __init__(self, m):
+        self.m = m 
+        self.shape = m.shape
+    def det(self):
+        determinant = np.linalg.det(self)
+        return determinant
+    def dim(self):
+        nr, nc = self.shape
+        return nr, nc 
 
+a = matrix(inp_m())
+print(a.det())
 
 
 
